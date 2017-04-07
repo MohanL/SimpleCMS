@@ -1,0 +1,7 @@
+h1 
+  -if @pages.any?
+    ul.pages
+    - @pages.each do |page|
+      == slim :page, :locals => {page: page}
+  - else
+    p No pages here!

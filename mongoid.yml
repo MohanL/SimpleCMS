@@ -1,0 +1,6 @@
+development:
+  clients:
+    default:
+      database: local
+      hosts:
+        - localhost:27017
