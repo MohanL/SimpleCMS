@@ -1,0 +1,12 @@
+#admin
+  nav
+    ul
+      li
+        a.round.button href='/pages' Pages
+      li
+        a.round.button href='/pages/new' Add a page
+      - if @page
+        li
+          a.round.button href="/pages/#{@page.id}/edit" Edit this page
+        li
+          a.round.button href="/pages/delete/#{@page.id}" Delete this page a.rounded.button href="/logout" Log Out
